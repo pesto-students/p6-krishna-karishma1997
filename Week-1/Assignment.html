@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Week1 | Module1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .dflex {
+        display: flex;
+        width: 100vw;
+      }
+
+      aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 50px;
+        float: inherit;
+      }
+
+      p {
+        color: azure;
+        font-size: 12px;
+      }
+
+      .headsplit {
+        display: flex;
+      }
+
+      h2 {
+        color: azure;
+      }
+
+      h6 {
+        color: azure;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+        width: 96vw;
+        float: right;
+      }
+
+      button {
+        color: blue;
+      }
+
+      footer {
+        background: rgb(47, 85, 133);
+        background-blend-mode: darken;
+        background-size: cover;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 0px 50px;
+
+        position: fixed;
+        left: 0;
+        top: 60%;
+        width: 100%;
+
+        color: white;
+        text-align: center;
+      }
+
+      .header-img {
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+      }
+
+      .header-background {
+        background: rgb(29 30 32 / 91%);
+        background-blend-mode: darken;
+        background-size: cover;
+        height: 150px;
+      }
+
+      .footer-img {
+        width: 50px;
+        height: 50px;
+        position: static;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 97%;
+        border: 1px solid #ddd;
+        float: right;
+      }
+
+      th,
+      td {
+        text-align: left;
+        padding: 16px;
+        font-size: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      .media-icons {
+        display: flex;
+        justify-content: space-evenly;
+        float: right;
+        width: 100%;
+      }
+      .font-color {
+        color: aliceblue;
+      }
+
+      .media-icons-header {
+        display: flex;
+        justify-content: space-between;
+        float: left;
+        width: 70%;
+      }
+      .padding-40 {
+        padding-top: 40px;
+      }
+      .sidebar {
+        margin: 0;
+        padding: 10px;
+        width: 30px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        z-index: 1;
+      }
+      .p-10 {
+        padding: 10px;
+      }
+      .m_100 {
+        margin-left: -100px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <i class="fa fa-reorder"></i>
+      <i class="fa fa fa-home"></i>
+      <i class="fa fa-search"></i>
+      <i class="fa fa-cloud"></i>
+      <i class="fa fa-user"></i>
+      <i class="fa fa-volume-up"></i>
+      <i class="fa fa-volume"></i>
+    </div>
+    <div>
+      <nav class="navbar header-background">
+        <div class="dflex">
+          <div>
+            <img
+              class="header-img"
+              src="https://vif1g.csb.app/src/assets/cattyboard.jpg"
+            />
+          </div>
+
+          <div class="width-85vw">
+            <section>
+              <h2>CattyBoard Top Single Charts(11.06.36)</h2>
+              <h6>Unknown Artist</h6>
+              <h6>2016. Charts.100songs</h6>
+            </section>
+            <div class="media-icons-header font-color padding-40">
+              <i class="fa fa-play">Play all</i>
+              <i class="fa fa-plus">Add to</i>
+              <i class="fa fa-ellipsis-h">More</i>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <table>
+        <tr>
+          <th>1. One Dance</th>
+          <th>Crake feat CatKid & Cyla</th>
+          <th>2.54</th>
+          <th><button>CATTY CLOUD SYNC</button></th>
+        </tr>
+        <tr>
+          <th>2. Panda</th>
+          <th>Cattee</th>
+          <th>4:06</th>
+          <th><button>CATTY CLOUD SYNC</button></th>
+        </tr>
+        <tr>
+          <th>3. Can't stop the Feeling!</th>
+          <th>Catin Climberlake</th>
+          <th>3:56</th>
+          <th><button>CATTY CLOUD SYNC</button></th>
+        </tr>
+        <tr>
+          <th>4. Work From Home</th>
+          <th>Cat Harmony feat Colla</th>
+          <th>3:34</th>
+          <th><button>CATTY CLOUD SYNC</button></th>
+        </tr>
+      </table>
+      <footer>
+        <img
+          class="footer-img p-10"
+          src="https://vif1g.csb.app/src/assets/cattyboard.jpg"
+        />
+        <aside class="m_100">
+          <p>If it Ain't Love</p>
+          <p>Catson Derulo</p>
+        </aside>
+        <aside class="media-icons font-color">
+          <i class="fa fa-step-backward"></i>
+          <i class="fa fa-pause"></i>
+          <i class="fa fa-step-forward"></i>
+          <i class="fa fa-circle-o-notch"></i>
+          <i class="fa fa-retweet"></i>
+        </aside>
+      </footer>
+    </div>
+  </body>
+
+  <body></body>
+</html>
