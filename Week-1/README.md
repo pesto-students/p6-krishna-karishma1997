@@ -34,4 +34,7 @@ The browser combines the DOM and the CSSOM and generates the render tree with th
  8. Layout: It looks into the elements and figures out where it needs to go on the page. It will see the sizes and position of the elements and try to calculate the line breaks, placement of each of the elements and the relationship between the elements. It is a slow process.
 Paint: Now that we know how the things look like and where they should go, we draw some pixels on the screen. Paint actually creates the picture of the layout that needs to be rendered. 
 
+<img width="536" alt="image" src="https://user-images.githubusercontent.com/38161894/193529138-24618848-117d-441d-b2c9-10c83639971b.png">
 
+How browser works?
+When the user enters the URL the data is stored in the server and return back. Because in the end browser is the interpreter. When entering google.com, the official address of each server is the IP address. The first thing the browser will do is when the address is entered, the browser contacts the DNS(each domain name is mapped to an address) then DNS translates the domain name into IP address. Then the Ip address is given to the browser, then the browser makes the request to the server which has the IP address. Then we generate the source code for the website and this is sent back to the browser and then it displays the result in the browser.
