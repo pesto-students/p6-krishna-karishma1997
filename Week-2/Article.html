@@ -26,17 +26,28 @@
 
     div {
         width: 100%;
+        padding: 0px 0px 0px 20px;
     }
-
     .float_left {
         float: left;
         width: 50%;
     }
-
-    .float_right {
+    @media (max-width:900px) { 
+        .float_left {
+            width: 100%;
+        }
+    }
+.float_right {
         float: right;
         width: 50%;
     }
+    @media (max-width:900px) { 
+        .float_right {
+            float: left;
+            width: 100%;
+        }
+    }
+
     p{
         width: 95%;
         text-align: justify;
@@ -44,6 +55,12 @@
     .padding_left{
         padding-left: 10%;
     }
+    @media (max-width:900px) { 
+        .padding_left{
+            padding-left: 20%;
+        }
+    }
+
 </style>
 
 <body>
