@@ -12,9 +12,6 @@
       width: 30%;
       
     }
-    .row:hover{
-    transform: rotate(45deg);
-    }
     .row div {
       width: 50%;
 
@@ -37,14 +34,66 @@
       background-color: rgb(12, 105, 54);
       height: 100px;
     }
-    
+    .margin_10{
+      margin: 10%;
+    }
+    .two:hover{
+      transform:rotate(45deg);
+      -ms-transform:rotate(45deg);
+      -webkit-transform:rotate(45deg);
+      -webkit-transition: -webkit-transform .8s ease-in-out;
+      -ms-transition: -ms-transform .8s ease-in-out;
+      transition: transform .8s ease-in-out; 
+     }
+ .three:hover{
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; 
+ }
+ .four:hover{
+  transform:rotate(45deg);
+  -ms-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; 
+ }
+ .one:hover{
+  transform:rotate(-45deg);
+  -ms-transform:rotate(-45deg);
+  -webkit-transform:rotate(-45deg);
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  -ms-transition: -ms-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out; 
+ }
+.text:hover {
+  padding-top: 40px;
+  opacity: 1;
+}
+.text:hover {
+  padding-top: 40px;
+  opacity: 1;
+  display: contents;
+}
+.text {
+  color: rgb(7, 7, 7);
+  opacity: 0;
+  display: none;
+  text-align: center;
+  padding-top: 0px;
+  transition: all .3s ease-in-out;
+}
   </style>
   <body>
-    <center>
+    <center class="margin_10">
     <div class="row">
       <div class="one"></div>
       <div class="two"></div>
     </div>
+    <div class="text">hi</div>
     <div class="row">
       <div class="three"></div>
       <div class="four"></div>
