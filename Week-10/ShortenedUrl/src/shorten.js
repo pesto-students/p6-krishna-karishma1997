@@ -14,9 +14,10 @@ const Shorten = () => {
             console.log(e);
         }
     };
-    console.log(url);
     return (
-        <div className="fixed-top">
+        <div className="fixed-top background_img">
+            <center className="m-40"><h1>More than just shorter Links</h1><br/>
+            <h6>Build your recognition and get detailed insights on how your links are performing</h6><br/>
             <input type="text" name="url" className="text-primary" value={url} onChange={(e) => { seturl(e.target.value) }} />
             <button onClick={() => {
                 fetchData();
@@ -24,7 +25,8 @@ const Shorten = () => {
             >
                 Submit URL
             </button><br/>
-            {shortenedUrl}
+            {shortenedUrl }
+            </center>
         </div>
     )
 }

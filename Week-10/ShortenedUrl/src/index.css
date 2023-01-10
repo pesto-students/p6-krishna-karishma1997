@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.background_img{
+  background-image: url("https://mdbootstrap.com/img/new/fluid/city/018.jpg");
+  height: -webkit-fill-available;
+}
+.m-40{
+  margin-top: 20%;
+}
