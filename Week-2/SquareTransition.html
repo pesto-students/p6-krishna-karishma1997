@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square</title>
+</head>
+<style>
+    .row {
+        display: flex;
+        width: 30%;
+    }
+
+    .row div {
+        width: 100px;
+
+    }
+
+    .one {
+        background-color: red;
+        height: 100px;
+        transform: translateX(100px);
+        transition: transform .8s ease-in-out;
+    }
+
+    .two {
+        background-color: yellow;
+        height: 100px;
+        transform: translateX(100px);
+        transition: transform .8s ease-in-out;
+    }
+
+    .three {
+        background-color: rgb(9, 0, 128);
+        height: 100px;
+        transform: translateX(100px);
+        transition: transform .8s ease-in-out;
+    }
+
+    .four {
+        background-color: rgb(12, 105, 54);
+        height: 100px;
+        transform: translateX(100px);
+        transition: transform .8s ease-in-out;
+    }
+
+    .margin_10 {
+        margin: 10%;
+    }
+
+    .block:hover .one {
+        transform: rotate(-0.25turn);
+        transition: transform .8s ease-in-out;
+        height: 100px;
+    }
+
+    .block:hover .three {
+        transform: rotate(0.25turn);
+        transition: transform .8s ease-in-out;
+        height: 100px;
+    }
+
+    .block:hover .two {
+        transform: translateX(200px) rotate(0.25turn);
+        transition: transform .8s ease-in-out;
+        height: 100px;
+    }
+
+    .block:hover .four {
+        transform: translateX(200px) rotate(-0.25turn);
+        transition: transform .8s ease-in-out;
+        height: 100px;
+    }
+
+    .text {
+        color: rgb(7, 7, 7);
+        opacity: 0;
+        display: none;
+        text-align: center;
+        padding-top: 0px;
+        transition: all .3s ease-in-out;
+    }
+
+    .inh {
+        position: absolute;
+        display: inline-block;
+        margin: 0px;
+        left: 54%;
+    }
+
+    .block {
+        position: relative;
+    }
+</style>
+
+<body>
+    <center class="margin_10">
+        <div class="block">
+            <div class="row">
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
+            <p class="inh">Hi</p>
+            <div class="row">
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
